@@ -53,7 +53,7 @@
           <li>
             <a href="additems.html">
               <span class="icon">
-                <ion-icon name="chatbubble-outline"></ion-icon>
+                <ion-icon name="pricetag-outline"></ion-icon>
               </span>
               <span class="title">Add Items</span>
             </a>
@@ -62,7 +62,7 @@
           <li>
             <a href="items.html">
               <span class="icon">
-                <ion-icon name="chatbubble-outline"></ion-icon>
+                <ion-icon name="pricetags-outline"></ion-icon>
               </span>
               <span class="title">Items</span>
             </a>
@@ -71,7 +71,7 @@
           <li>
             <a href="addorders.html">
               <span class="icon">
-                <ion-icon name="chatbubble-outline"></ion-icon>
+                <ion-icon name="bag-add-outline"></ion-icon>
               </span>
               <span class="title">Add Order</span>
             </a>
@@ -80,7 +80,7 @@
           <li>
             <a href="orders.html">
               <span class="icon">
-                <ion-icon name="chatbubble-outline"></ion-icon>
+                <ion-icon name="bag-outline"></ion-icon>
               </span>
               <span class="title">Orders</span>
             </a>
@@ -194,6 +194,7 @@
                     placeholder="Item"
                     required
                   />
+                  <ion-icon name="cart-outline"></ion-icon>
                 </label>
                 <br /><br />
                 <label for="PriceInp">
@@ -204,6 +205,7 @@
                     placeholder="Price"
                     required
                   />
+                  <ion-icon name="cash-outline"></ion-icon>
                 </label>
                 <br /><br />
                 <label for="WeightInp">
@@ -214,6 +216,7 @@
                     placeholder="Weight"
                     required
                   />
+                  <ion-icon name="barbell-outline"></ion-icon>
                 </label>
                 <br /><br />
                 <button class="btn" id="additembtn">Add Item</button>
@@ -237,7 +240,7 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <script type="module">
-       import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
       import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
       import {
         getDatabase,
