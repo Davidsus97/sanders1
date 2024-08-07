@@ -140,13 +140,6 @@
             <ion-icon name="menu-outline"></ion-icon>
           </div>
 
-          <div class="search">
-            <label>
-              <input type="text" placeholder="Search here" />
-              <ion-icon name="search-outline"></ion-icon>
-            </label>
-          </div>
-
           <div class="user">
             <img src="assets/imgs/customer01.jpg" alt="" />
           </div>
@@ -154,17 +147,6 @@
 
         <!-- ======================= Cards ================== -->
         <div class="cardBox">
-          <div class="card">
-            <div>
-              <div class="numbers">1,504</div>
-              <div class="cardName">Daily Views</div>
-            </div>
-
-            <div class="iconBx">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-          </div>
-
           <div class="card">
             <div>
               <div class="numbers">80</div>
@@ -175,228 +157,40 @@
               <ion-icon name="cart-outline"></ion-icon>
             </div>
           </div>
-
-          <div class="card">
-            <div>
-              <div class="numbers">284</div>
-              <div class="cardName">Comments</div>
-            </div>
-
-            <div class="iconBx">
-              <ion-icon name="chatbubbles-outline"></ion-icon>
-            </div>
-          </div>
-
-          <div class="card">
-            <div>
-              <div class="numbers">$7,842</div>
-              <div class="cardName">Earning</div>
-            </div>
-
-            <div class="iconBx">
-              <ion-icon name="cash-outline"></ion-icon>
-            </div>
-          </div>
         </div>
 
         <!-- ================ Order Details List ================= -->
         <div class="details">
           <div class="recentOrders">
             <div class="cardHeader">
-              <h2>Recent Orders</h2>
-              <a href="#" class="btn">View All</a>
+              <h2>Items</h2>
+
+              <div class="search">
+                <label>
+                  <input type="text" id="searchInput" placeholder="Search For Items" />
+                  <ion-icon name="search-outline"></ion-icon>
+                </label>
+              </div>
+
+              <button id="searchButton" class="btn">Search</button>
             </div>
 
-            <table>
+            <table id="itemsTable">
               <thead>
                 <tr>
-                  <td>Name</td>
-                  <td>Price</td>
-                  <td>Payment</td>
-                  <td>Status</td>
+                 <th>Item ID</th>
+                 <th>Item</th>
+                 <th>Price</th>
+                 <th>Weight</th>
                 </tr>
               </thead>
 
-              <tbody>
-                <tr>
-                  <td>Star Refrigerator</td>
-                  <td>$1200</td>
-                  <td>Paid</td>
-                  <td><span class="status delivered">Delivered</span></td>
-                </tr>
-
-                <tr>
-                  <td>Dell Laptop</td>
-                  <td>$110</td>
-                  <td>Due</td>
-                  <td><span class="status pending">Pending</span></td>
-                </tr>
-
-                <tr>
-                  <td>Apple Watch</td>
-                  <td>$1200</td>
-                  <td>Paid</td>
-                  <td><span class="status return">Return</span></td>
-                </tr>
-
-                <tr>
-                  <td>Addidas Shoes</td>
-                  <td>$620</td>
-                  <td>Due</td>
-                  <td><span class="status inProgress">In Progress</span></td>
-                </tr>
-
-                <tr>
-                  <td>Star Refrigerator</td>
-                  <td>$1200</td>
-                  <td>Paid</td>
-                  <td><span class="status delivered">Delivered</span></td>
-                </tr>
-
-                <tr>
-                  <td>Dell Laptop</td>
-                  <td>$110</td>
-                  <td>Due</td>
-                  <td><span class="status pending">Pending</span></td>
-                </tr>
-
-                <tr>
-                  <td>Apple Watch</td>
-                  <td>$1200</td>
-                  <td>Paid</td>
-                  <td><span class="status return">Return</span></td>
-                </tr>
-
-                <tr>
-                  <td>Addidas Shoes</td>
-                  <td>$620</td>
-                  <td>Due</td>
-                  <td><span class="status inProgress">In Progress</span></td>
-                </tr>
-              </tbody>
+              <tbody id="tbody1"></tbody>
             </table>
           </div>
 
           <!-- ================= New Customers ================ -->
-          <div class="recentCustomers">
-            <div class="cardHeader">
-              <h2>Recent Customers</h2>
-            </div>
-
-            <table>
-              <tr>
-                <td width="60px">
-                  <div class="imgBx">
-                    <img src="assets/imgs/customer02.jpg" alt="" />
-                  </div>
-                </td>
-                <td>
-                  <h4>
-                    David <br />
-                    <span>Italy</span>
-                  </h4>
-                </td>
-              </tr>
-
-              <tr>
-                <td width="60px">
-                  <div class="imgBx">
-                    <img src="assets/imgs/customer01.jpg" alt="" />
-                  </div>
-                </td>
-                <td>
-                  <h4>
-                    Amit <br />
-                    <span>India</span>
-                  </h4>
-                </td>
-              </tr>
-
-              <tr>
-                <td width="60px">
-                  <div class="imgBx">
-                    <img src="assets/imgs/customer02.jpg" alt="" />
-                  </div>
-                </td>
-                <td>
-                  <h4>
-                    David <br />
-                    <span>Italy</span>
-                  </h4>
-                </td>
-              </tr>
-
-              <tr>
-                <td width="60px">
-                  <div class="imgBx">
-                    <img src="assets/imgs/customer01.jpg" alt="" />
-                  </div>
-                </td>
-                <td>
-                  <h4>
-                    Amit <br />
-                    <span>India</span>
-                  </h4>
-                </td>
-              </tr>
-
-              <tr>
-                <td width="60px">
-                  <div class="imgBx">
-                    <img src="assets/imgs/customer02.jpg" alt="" />
-                  </div>
-                </td>
-                <td>
-                  <h4>
-                    David <br />
-                    <span>Italy</span>
-                  </h4>
-                </td>
-              </tr>
-
-              <tr>
-                <td width="60px">
-                  <div class="imgBx">
-                    <img src="assets/imgs/customer01.jpg" alt="" />
-                  </div>
-                </td>
-                <td>
-                  <h4>
-                    Amit <br />
-                    <span>India</span>
-                  </h4>
-                </td>
-              </tr>
-
-              <tr>
-                <td width="60px">
-                  <div class="imgBx">
-                    <img src="assets/imgs/customer01.jpg" alt="" />
-                  </div>
-                </td>
-                <td>
-                  <h4>
-                    David <br />
-                    <span>Italy</span>
-                  </h4>
-                </td>
-              </tr>
-
-              <tr>
-                <td width="60px">
-                  <div class="imgBx">
-                    <img src="assets/imgs/customer02.jpg" alt="" />
-                  </div>
-                </td>
-                <td>
-                  <h4>
-                    Amit <br />
-                    <span>India</span>
-                  </h4>
-                </td>
-              </tr>
-            </table>
-          </div>
+          <div class="recentCustomers"></div>
         </div>
       </div>
     </div>
@@ -413,5 +207,124 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+      import {
+        getDatabase,
+        ref,
+        child,
+        get,
+        set,
+        onValue,
+      } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyA0ngZCZavOM77Z6O2PaSFl3FztHGcjobk",
+        authDomain: "sanders-178b9.firebaseapp.com",
+        databaseURL: "https://sanders-178b9-default-rtdb.firebaseio.com",
+        projectId: "sanders-178b9",
+        storageBucket: "sanders-178b9.appspot.com",
+        messagingSenderId: "225334600973",
+        appId: "1:225334600973:web:39d2f699dd719eecadbc44",
+        measurementId: "G-GMMS2WFE3V",
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      const db = getDatabase();
+
+      var iid = 0;
+      let tbody = document.getElementById("tbody1");
+
+      function AddItemToTable(item, price, weight) {
+        let trow = document.createElement("tr");
+        let td1 = document.createElement("td");
+        let td2 = document.createElement("td");
+        let td3 = document.createElement("td");
+        let td4 = document.createElement("td");
+
+        td1.innerHTML = ++iid;
+        td2.innerHTML = item;
+        td3.innerHTML = price;
+        td4.innerHTML = weight;
+
+        trow.appendChild(td1);
+        trow.appendChild(td2);
+        trow.appendChild(td3);
+        trow.appendChild(td4);
+
+        tbody.appendChild(trow);
+      }
+
+      function AddAllItemsToTable(TheItems) {
+        iid = 0;
+        tbody.innerHTML = "";
+        TheItems.forEach((element) => {
+          AddItemToTable(element.item, element.price, element.weight);
+        });
+      }
+
+      function GetAllDataOnce() {
+        const dbRef = ref(db);
+        get(child(dbRef, "items"))
+          .then((snapshot) => {
+            var Items = [];
+            snapshot.forEach((childSnapshot) => {
+              Items.push(childSnapshot.val());
+            });
+            AddAllItemsToTable(Items);
+          })
+          .catch((error) => {
+            console.error("Error fetching data: ", error);
+          });
+      }
+
+      function GetAllDataRealtime() {
+        const dbRef = ref(db, "items");
+        onValue(dbRef, (snapshot) => {
+          var Items = [];
+          snapshot.forEach((childSnapshot) => {
+            Items.push(childSnapshot.val());
+          });
+          AddAllItemsToTable(Items);
+        });
+      }
+
+      window.onload = GetAllDataOnce;
+
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const searchInput = document.getElementById("searchInput");
+        const searchButton = document.getElementById("searchButton");
+        const table = document.getElementById("itemsTable");
+        const rows = table.getElementsByTagName("tr");
+
+        searchButton.addEventListener("click", () => {
+          const filter = searchInput.value.toLowerCase();
+          for (let i = 1; i < rows.length; i++) {
+            let row = rows[i];
+            let iid = row.getElementsByTagName("td")[0];
+            let item = row.getElementsByTagName("td")[1];
+            let price = row.getElementsByTagName("td")[2];
+            let weight = row.getElementsByTagName("td")[3];
+
+            if (iid && item && price && weight) {
+              let iidText = iid.textContent || iid.innerText;
+              let itemText = item.textContent || item.innerText;
+              let priceText = price.textContent || price.innerText;
+              let weightText = weight.textContent || weight.innerText;
+
+              row.style.display =
+                iidText.toLowerCase().includes(filter) ||
+                itemText.toLowerCase().includes(filter) ||
+                priceText.toLowerCase().includes(filter) ||
+                weightText.toLowerCase().includes(filter)
+                  ? ""
+                  : "none";
+            }
+          }
+        });
+      });
+    </script>
   </body>
 </html>
